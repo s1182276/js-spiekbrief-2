@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="jasmine-standalone/lib/jasmine/jasmine_favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="jasmine-standalone/lib/jasmine/jasmine.css"
+    />
+    <script
+      type="text/javascript"
+      src="jasmine-standalone/lib/jasmine/jasmine.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="jasmine-standalone/lib/jasmine/jasmine-html.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="jasmine-standalone/lib/jasmine/boot.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- in de test worden de bestanden uit src ingeladen -->
+    <script type="text/javascript" src="../src/js/Dilemma.js"></script>
+    <script type="text/javascript" src="../src/js/Dilemmamanager.js"></script>
+    <script type="text/javascript" src="../src/js/Game.js"></script>
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <script>
+      describe("opdracht 3", () => {
+        //define expected values
+        const expectedDilemma = "1 or 2?";
+        const expectedChoices = ["1", "2"];
+        const expectedCategory = "one";
+        const expectedDilemma1 = new Dilemma("1 or 2", ["1", "2"], "one");
+        const expectedDilemma2 = new Dilemma("3 or 4", ["3", "4"], "three");
+        const expectedDilemmas = new Array(expectedDilemma1, expectedDilemma2);
+        let dilemmaObject1, dilemmamanagerObject;
+
+        beforeEach(() => {
+          //these objects will be avaiable for all test below
+          dilemmaObject1 = new Dilemma(
+            expectedDilemma,
+            expectedChoices,
+            expectedCategory
+          );
+          dilemmamanagerObject = new Dilemmamanager(expectedDilemmas);
+        });
+
+        describe("opdracht 3a.1, constructor Dilemma", () => {
+          it("Er is een klasse Dilemma", () => {
+            expect(dilemmaObject1).toBeDefined();
+          });
+
+          it("de constructor heeft 3 parameters", () => {
+            expect(dilemmaObject1.dilemma).toBe(expectedDilemma);
+            expect(dilemmaObject1.choices[0]).toBe(expectedChoices[0]);
+            expect(dilemmaObject1.choices[1]).toBe(expectedChoices[1]);
+            expect(dilemmaObject1.category).toBe(expectedCategory);
+          });
+        });
+
+        describe("opdracht 3a.2, constructor Dilemmamanager", () => {
+          it("Er is een klasse Dilemmamanager", () => {
+            expect(dilemmamanagerObject).toBeDefined();
+          });
+
+          it("de klasse heeft 1 parameter, een array met de juiste lengte", () => {
+            expect(Array.isArray(dilemmamanagerObject.dilemmas)).toBe(true);
+            expect(dilemmamanagerObject.dilemmas.length).toBe(
+              expectedDilemmas.length
+            );
+          });
+
+          it("de klasse heeft 1 parameter, een array met de juiste waarden", () => {
+            expect(dilemmamanagerObject.dilemmas[0].dilemma).toBe(
+              expectedDilemma1.dilemma
+            );
+            expect(dilemmamanagerObject.dilemmas[0].category).toBe(
+              expectedDilemma1.category
+            );
+            expect(dilemmamanagerObject.dilemmas[1].dilemma).toBe(
+              expectedDilemma2.dilemma
+            );
+            expect(dilemmamanagerObject.dilemmas[1].category).toBe(
+              expectedDilemma2.category
+            );
+          });
+        });
+
+        describe("opdracht 3b, Dilemmamanager.getRandomDilemma(category) bestaat", () => {
+          it("De methode getRandomDilemma(category) bestaat", () => {
+            expect(dilemmamanagerObject.getRandomDilemma).toBeDefined();
+            expect(typeof dilemmamanagerObject.getRandomDilemma).toBe(
+              "function"
+            );
+          });
+
+          it("opgave 3c, Dilemmamanager.getRandomDilemma(category)  filtered de juiste category", () => {
+            let dilemma = dilemmamanagerObject.getRandomDilemma(expectedCategory);
+            expect(dilemma.category).toBe(expectedCategory);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

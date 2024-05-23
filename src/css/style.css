@@ -1,0 +1,56 @@
+header,
+footer,
+.text{
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  background-color: #5EAE8B;
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  margin: auto; /* Magic! */
+  align-items: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+/* TODO door student */
+#dilemma-container {
+  font-size: x-large;
+  width: 100%;
+  cursor: pointer;
+  text-transform: lowercase;
+  animation: in-fade 4s;
+}
+
+@keyframes in-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#dilemma-container::first-letter{
+  text-transform: uppercase;
+}
+
+button {
+  width: 40%;
+  padding: 5px;
+  margin: auto;
+}
+
+/* TODO door student, opgave 2a */
+
+/* TODO door student, opgave 2b */
+
+/* TODO door student, opgave 2c */

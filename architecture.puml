@@ -1,0 +1,37 @@
+@startuml
+'ALT+D to preview this PlantUML file (with Rich PlantUML plugin)
+
+'general layout
+skinparam minClassWidth 250
+skinparam ObjectFontSize 14
+skinparam NoteFontSize 14
+skinparam ClassAttributeIconSize 12
+
+object Game {
+    - container
+    - dilemmamanager
+    __
+    + init(container)
+    + showNextDilemma(category)
+    - loadDilemmas(jsonUrl)
+    - loadDilemmamanager(jsonUrl)
+}
+object Dilemmamanager {
+    - dilemmas[ ]
+    __
+    + getRandomDilemma(category)
+}
+
+object Dilemma {
+    - dilemma
+    - choices
+    - category
+    __
+
+}
+
+Dilemmamanager -left-- Game
+'[hidden] = trick to get it below Game class
+Dilemmamanager -- Dilemma
+
+@enduml

@@ -1,0 +1,307 @@
+{
+    "success": true,
+    "data": {
+        "dilemmas": [
+            {
+                "id": "1",
+                "category": "Werk",
+                "dilemma": [
+                    "5 miljoen euro krijgen",
+                    "voor 15 miljoen euro werken"
+                ],
+                "choice": [
+                    "5 miljoen",
+                    "15 miljoen"
+                ]
+            },
+            {
+                "id": "2",
+                "category": "Superkracht",
+                "dilemma": [
+                    "nooit hoeven te slapen",
+                    "nooit hoeven te eten/drinken"
+                ],
+                "choice": [
+                    "slapen",
+                    "eten/drinken"
+                ]
+            },
+            {
+                "id": "3",
+                "category": "Vrije tijd",
+                "dilemma": [
+                    "een vogelspin over je laten lopen",
+                    "een slang op je schouders"
+                ],
+                "choice": [
+                    "vogelspin",
+                    "slang"
+                ]
+            },
+            {
+                "id": "4",
+                "category": "Werk",
+                "dilemma": [
+                    "een professionele sporter zijn",
+                    "een professionele gamer zijn"
+                ],
+                "choice": [
+                    "sporter",
+                    "gamer"
+                ]
+            },
+            {
+                "id": "5",
+                "category": "Vrije tijd",
+                "dilemma": [
+                    "een week naar de Noordpool",
+                    "een week naar de Sahara"
+                ],
+                "choice": [
+                    "Noordpool",
+                    "Sahara"
+                ]
+            },
+            {
+                "id": "6",
+                "category": "Superkracht",
+                "dilemma": [
+                    "telepathisch zijn",
+                    "telekinetisch zijn"
+                ],
+                "choice": [
+                    "telepathisch",
+                    "telekinetisch"
+                ]
+            },
+            {
+                "id": "7",
+                "category": "Werk",
+                "dilemma": [
+                    "astronaut zijn",
+                    "diepzeeduiker zijn"
+                ],
+                "choice": [
+                    "astronaut",
+                    "diepzeeduiker"
+                ]
+            },
+            {
+                "id": "8",
+                "category": "Superkracht",
+                "dilemma": [
+                    "zoveel eten als je wilt zonder dik te worden",
+                    "onbeperkt geld hebben"
+                ],
+                "choice": [
+                    "eten",
+                    "geld"
+                ]
+            },
+            {
+                "id": "9",
+                "category": "Superkracht",
+                "dilemma": [
+                    "terug in de tijd kunnen",
+                    "de toekomst kunnen zien"
+                ],
+                "choice": [
+                    "terug in de tijd",
+                    "toekomst"
+                ]
+            },
+            {
+                "id": "10",
+                "category": "Lichaam",
+                "dilemma": [
+                    "tenen aan je handen hebben",
+                    "vingers aan je voeten"
+                ],
+                "choice": [
+                    "tenen",
+                    "vingers"
+                ]
+            },
+            {
+                "id": "11",
+                "category": "Lichaam",
+                "dilemma": [
+                    "doof zijn",
+                    "blind zijn"
+                ],
+                "choice": [
+                    "doof",
+                    "blind"
+                ]
+            },
+            {
+                "id": "12",
+                "category": "Lichaam",
+                "dilemma": [
+                    "altijd een steentje in je schoen hebben",
+                    "altijd op hoge hakken lopen"
+                ],
+                "choice": [
+                    "steentje",
+                    "hoge hakken"
+                ]
+            },
+            {
+                "id": "13",
+                "category": "Werk",
+                "dilemma": [
+                    "al je foto’s verliezen",
+                    "al je geld verliezen"
+                ],
+                "choice": [
+                    "foto's",
+                    "geld"
+                ]
+            },
+            {
+                "id": "14",
+                "category": "Superkracht",
+                "dilemma": [
+                    "leven in het verleden",
+                    "leven in de toekomst"
+                ],
+                "choice": [
+                    "verleden",
+                    "toekomst"
+                ]
+            },
+            {
+                "id": "15",
+                "category": "Lichaam",
+                "dilemma": [
+                    "arm en knap zijn",
+                    "rijk en lelijk zijn"
+                ],
+                "choice": [
+                    "arm en knap",
+                    "rijk en lelijk"
+                ]
+            },
+            {
+                "id": "16",
+                "category": "Lichaam",
+                "dilemma": [
+                    "je stem kwijt zijn",
+                    "na elke zin dwangmatig je middelvinger op moeten steken"
+                ],
+                "choice": [
+                    "stem kwijt",
+                    "dwangmatige middelvinger"
+                ]
+            },
+            {
+                "id": "17",
+                "category": "Lichaam",
+                "dilemma": [
+                    "de slimste zijn",
+                    "de knapste zijn"
+                ],
+                "choice": [
+                    "slimste",
+                    "snapste"
+                ]
+            },
+            {
+                "id": "18",
+                "category": "Superkracht",
+                "dilemma": [
+                    "doorgaan met je huidige leven",
+                    "opnieuw beginnen met je leven"
+                ],
+                "choice": [
+                    "huidige",
+                    "opnieuw"
+                ]
+            },
+            {
+                "id": "19",
+                "category": "Werk",
+                "dilemma": [
+                    "altijd 15 minuten te laat",
+                    "altijd 15 minuten te vroeg"
+                ],
+                "choice": [
+                    "te laat",
+                    "te vroeg"
+                ]
+            },
+            {
+                "id": "20",
+                "category": "Werk",
+                "dilemma": [
+                    "de liefde van je leven ontmoeten",
+                    "3 miljoen euro krijgen"
+                ],
+                "choice": [
+                    "liefde",
+                    "3 miljoen"
+                ]
+            },
+            {
+                "id": "21",
+                "category": "Werk",
+                "dilemma": [
+                    "nooit meer op vakantie gaan",
+                    "nooit meer werken"
+                ],
+                "choice": [
+                    "vakantie",
+                    "werken"
+                ]
+            },
+            {
+                "id": "22",
+                "category": "Lichaam",
+                "dilemma": [
+                    "hard op je tong bijten",
+                    "met blote voeten in een drol stappen"
+                ],
+                "choice": [
+                    "tong",
+                    "drol"
+                ]
+            },
+            {
+                "id": "23",
+                "category": "Lichaam",
+                "dilemma": [
+                    "nooit meer naar de tandarts hoeven",
+                    "nooit meer uiteten"
+                ],
+                "choice": [
+                    "tandarts",
+                    "uiteten"
+                ]
+            },
+            {
+                "id": "24",
+                "category": "Lichaam",
+                "dilemma": [
+                    "drie dagen natte sokken aan",
+                    "de hele week dezelfde onderbroek"
+                ],
+                "choice": [
+                    "natte sokken",
+                    "onderbroek"
+                ]
+            },
+            {
+                "id": "25",
+                "category": "Lichaam",
+                "dilemma": [
+                    "er altijd goed en jong uitblijven zien",
+                    "gewoon zoals iedereen ouder worden en 10 jaar extra leven"
+                ],
+                "choice": [
+                    "jong",
+                    "ouder"
+                ]
+            }
+        ]
+    }
+}

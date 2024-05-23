@@ -1,0 +1,4 @@
+#all installed node modules
+/node_modules
+/dist
+/docs
